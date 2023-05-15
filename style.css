@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#myButton {
+  background-color: blue;
+  color: white;
+  font-size: 24px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 16px;
+  font-size: 24px;
+}
