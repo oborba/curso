@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Tela de Login</title>
+      <title>Login Good Vibes</title>
       <style>
          body {
          font-family: Arial, sans-serif;
@@ -52,7 +52,7 @@
       <script>
          function login() {
              var username = document.getElementById("username").value;
-             var password = document.getElementByName("password").value;
+             var password = document.getElementsByName("password")[0].value;
                  
              if (username === "admin" && password === "admin") {
                  setTimeout(function() {
@@ -66,7 +66,7 @@
    </head>
    <body>
       <div class="container">
-         <h2>Tela de Login</h2>
+         <h2>Login Good Vibes</h2>
          <form id="loginForm">
             <label for="username">Usuário:</label>
             <input type="text" id="username" required>
