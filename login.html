@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Tela de Login</title>
+      <style>
+         body {
+         font-family: Arial, sans-serif;
+         background-color: #f2f2f2;
+         }
+         .container {
+         width: 300px;
+         margin: 0 auto;
+         margin-top: 100px;
+         background-color: #fff;
+         padding: 20px;
+         border-radius: 5px;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+         }
+         h2 {
+         text-align: center;
+         }
+         label {
+         display: block;
+         margin-bottom: 10px;
+         }
+         input[type="text"],
+         input[type="password"] {
+         width: 100%;
+         padding: 5px;
+         border: 1px solid #ccc;
+         border-radius: 3px;
+         box-sizing: border-box;
+         }
+         input[type="button"] {
+         width: 50%;
+         text-align: center;
+         padding: 10px;
+         margin-top: 10px;
+         background-color: #4049a8;
+         border: none;
+         color: #fff;
+         cursor: pointer;
+         border-radius: 3px;
+         font-weight: bold;
+         }
+         .message {
+         margin-top: 20px;
+         text-align: center;
+         display: none;
+         }
+      </style>
+      <script>
+         function login() {
+             var username = document.getElementById("username").value;
+             var password = document.getElementById("password").value;
+                 
+             if (username === "admin" && password === "admin") {
+                 setTimeout(function() {
+                         window.location.href = "https://oborba.github.io/good-vibes/";
+                     }, 2000); // Aguarda 2 segundos antes de redirecionar
+                 } else {
+                     alert("Credenciais inválidas. Tente novamente.");
+                 }
+             }
+      </script>  
+   </head>
+   <body>
+      <div class="container">
+         <h2>Tela de Login</h2>
+         <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            <center>
+                <input type="button" value="Login" onclick="login()">
+            </center>
+         </form>
+      </div>
+   </body>
+</html>
